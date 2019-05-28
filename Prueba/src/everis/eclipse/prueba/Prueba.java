@@ -5,28 +5,21 @@ import java.util.Scanner;
 public class Prueba {
 
 	public static void main(String[] args) {
-		System.out.println("Hola Mundo!");
+		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Git rules!");
-		System.out.println("Añadiendo más codigo...");
-		System.out.println("Hooola Buenas!");
-		System.out.println("Hola Jesús, soy Luis, encantado de conocerte.");
+		System.out.print("Introduce el nombre del empleado: ");
+		String nombre = sc.nextLine();
 		
-		Scanner scanner = new Scanner (System.in);
+		System.out.print("Introduce el sueldo por hora: ");
+		double sueldoHora = sc.nextDouble();
 		
-		System.out.println("¿Nos echaras de menos como tutor el curso que viene?");
-		boolean si = scanner.nextBoolean();
+		System.out.print("Introduce el numero de horas trabajadas: ");
+		int numHorasTrab = sc.nextInt();
+		sc.close();
 		
-		if (si) {
-			
-			System.out.println("Nosotros también...");
-			
-		} else {
-			
-			System.out.println("Ah vaya...");
-			
-		}
-		scanner.close();
+		Empleado emp1 = new Empleado(nombre, sueldoHora, numHorasTrab);
+		
+		System.out.println(emp1);
 		
 	}
 
