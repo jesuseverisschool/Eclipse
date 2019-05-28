@@ -16,6 +16,7 @@ public class Prueba {
 	int mes = sc.nextInt();
 	System.out.println("Introduzca fecha dia ");
 	int dia = sc.nextInt();
+	sc.close();
 	
 	LocalDate fecha = LocalDate.of(any, mes, dia);
 
