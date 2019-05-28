@@ -63,5 +63,6 @@ public class Prueba {
 		sc.close();
 	
 		System.out.println("Fin del programa");
+		System.out.println("Fin del programa");
 	}
 }
