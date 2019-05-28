@@ -17,4 +17,20 @@ public class Empleado {
 		return "Nombre: " + nombre + " | Sueldo Hora: " + sueldoHora + " | Num Horas Trabajadas: " + numHorasTrab;
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getNumHorasTrab() {
+		return numHorasTrab;
+	}
+
+	public void setNumHorasTrab(int numHorasTrab) {
+		this.numHorasTrab = numHorasTrab;
+	}
+
 }
