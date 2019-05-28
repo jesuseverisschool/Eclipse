@@ -25,4 +25,12 @@ public class Empleado {
 		this.nombre = nombre;
 	}
 
+	public int getNumHorasTrab() {
+		return numHorasTrab;
+	}
+
+	public void setNumHorasTrab(int numHorasTrab) {
+		this.numHorasTrab = numHorasTrab;
+	}
+
 }
