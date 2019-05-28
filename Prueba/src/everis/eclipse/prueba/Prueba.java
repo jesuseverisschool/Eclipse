@@ -20,26 +20,26 @@ public class Prueba {
 		String nombre = sc.nextLine();
 		System.out.print("Introduce el sueldo por hora: ");
 		double sueldoHora = sc.nextDouble();
-		
 		System.out.print("Introduce el numero de horas trabajadas: ");
 		int numHorasTrab = sc.nextInt();
+		sc.nextLine();
+		Empleado emp1 = new Empleado(nombre, sueldoHora, numHorasTrab);
+		System.out.println(emp1);
 		
 		System.out.println("Introduzca nombre");
 		String nombreDep = sc.nextLine();
 		System.out.println("Introduzca fecha año ");
-	int any = sc.nextInt();
-	System.out.println("Introduzca fecha mes ");
-	int mes = sc.nextInt();
-	System.out.println("Introduzca fecha dia ");
-	int dia = sc.nextInt();
-	sc.close();
+		int any = sc.nextInt();
+		System.out.println("Introduzca fecha mes ");
+		int mes = sc.nextInt();
+		System.out.println("Introduzca fecha dia ");
+		int dia = sc.nextInt();
+		sc.close();
+			
+		LocalDate fecha = LocalDate.of(any, mes, dia);
+		Departamento dp1 = new Departamento(nombreDep,fecha);
+		System.out.println(dp1);
 		
-	LocalDate fecha = LocalDate.of(any, mes, dia);
-		Empleado emp1 = new Empleado(nombre, sueldoHora, numHorasTrab);
-		
-	Departamento dp1 = new Departamento(nombreDep,fecha);
-	System.out.println(dp1);
-		System.out.println(emp1);
 	
 }
 }
