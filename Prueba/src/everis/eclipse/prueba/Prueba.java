@@ -1,33 +1,26 @@
 package everis.eclipse.prueba;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Prueba {
 
 	public static void main(String[] args) {
-		System.out.println("Hola Mundo!");
-		
-		System.out.println("Git rules!");
-		System.out.println("Añadiendo más codigo...");
-		System.out.println("Hooola Buenas!");
-		System.out.println("Hola Jesús, soy Luis, encantado de conocerte.");
-		
-		Scanner scanner = new Scanner (System.in);
-		
-		System.out.println("¿Nos echaras de menos como tutor el curso que viene?");
-		boolean si = scanner.nextBoolean();
-		
-		if (si) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Introduzca nombre");
+			String nombre = sc.nextLine();
 			
-			System.out.println("Nosotros también...");
-			
-		} else {
-			
-			System.out.println("Ah vaya...");
-			
-		}
-		scanner.close();
-		
-	}
+		System.out.println("Introduzca fecha año ");
+	int any = sc.nextInt();
+	System.out.println("Introduzca fecha mes ");
+	int mes = sc.nextInt();
+	System.out.println("Introduzca fecha dia ");
+	int dia = sc.nextInt();
+	
+	LocalDate fecha = LocalDate.of(any, mes, dia);
 
+	Departamento dp1 = new Departamento(nombre,fecha);
+	System.out.println(dp1);
+	
+}
 }
