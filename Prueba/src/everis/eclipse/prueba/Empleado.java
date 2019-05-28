@@ -33,4 +33,14 @@ public class Empleado {
 		this.numHorasTrab = numHorasTrab;
 	}
 
+	public double getSueldoHora() {
+		return sueldoHora;
+	}
+
+	public void setSueldoHora(double sueldoHora) {
+		this.sueldoHora = sueldoHora;
+	}
+	
+	
+
 }
