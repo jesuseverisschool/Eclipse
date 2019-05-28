@@ -5,27 +5,18 @@ import java.util.Scanner;
 public class Prueba {
 
 	public static void main(String[] args) {
-		System.out.println("Hola Mundo!");
-		
-		System.out.println("Git rules!");
-		System.out.println("Añadiendo más codigo...");
-		System.out.println("Hooola Buenas!");
-		System.out.println("Hola Jesús, soy Luis, encantado de conocerte.");
 		
 		Scanner scanner = new Scanner (System.in);
+
+		System.out.println("Introduce los datos del ordenador: ");
+		System.out.println("Introduce el modelo: ");
+		String modelo = scanner.nextLine();
+		System.out.println("Introduce el número de serie: ");
+		String numeroSerie = scanner.nextLine();
 		
-		System.out.println("¿Nos echaras de menos como tutor el curso que viene?");
-		boolean si = scanner.nextBoolean();
-		
-		if (si) {
-			
-			System.out.println("Nosotros también...");
-			
-		} else {
-			
-			System.out.println("Ah vaya...");
-			
-		}
+		Ordenador o = new Ordenador(modelo, numeroSerie);
+		System.out.println("Datos del ordenador: " + o);
+
 		scanner.close();
 		
 	}
