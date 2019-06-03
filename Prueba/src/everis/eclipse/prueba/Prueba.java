@@ -14,8 +14,10 @@ public class Prueba {
 		String modelo = sc.nextLine();
 		System.out.println("Introduce el número de serie: ");
 		String numeroSerie = sc.nextLine();
+		System.out.println("Introduce la marca: ");
+		String marca = sc.nextLine();
 		
-		Ordenador o = new Ordenador(modelo, numeroSerie);
+		Ordenador o = new Ordenador(modelo, numeroSerie, marca);
 		
 		System.out.println("Datos del ordenador: " + o);
 		
