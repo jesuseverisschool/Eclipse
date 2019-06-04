@@ -4,18 +4,16 @@ public class Ordenador {
 	
 	private String modelo;
 	private String numeroSerie;
-	private String marca;
 	
-	public Ordenador(String modelo, String numeroSerie, String marca) {
+	public Ordenador(String modelo, String numeroSerie) {
 		super();
 		this.modelo = modelo;
 		this.numeroSerie = numeroSerie;
-		this.marca = marca;
 	}
 	
 	@Override
 	public String toString() {
-		return modelo + " " + numeroSerie + " " + marca;
+		return modelo + " " + numeroSerie;
 	}
 	
 	
